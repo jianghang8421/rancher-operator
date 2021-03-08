@@ -6,7 +6,6 @@ replace k8s.io/client-go => k8s.io/client-go v0.20.2
 
 require (
 	github.com/go-logr/logr v0.3.0
-	github.com/rancher/eks-operator v1.0.6-rc1
 	github.com/rancher/fleet/pkg/apis v0.0.0-20210203165831-44af1553b47e
 	github.com/rancher/lasso v0.0.0-20210219163000-fcdfcec12969
 	github.com/rancher/lasso/controller-runtime v0.0.0-20210219163000-fcdfcec12969
