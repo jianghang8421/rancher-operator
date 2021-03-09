@@ -1,5 +1,5 @@
 image:
-  repository: rancher/rancher-operator
+  repository: cnrancher/rancher-operator
   tag: latest
   imagePullPolicy: IfNotPresent
 

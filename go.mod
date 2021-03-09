@@ -2,7 +2,11 @@ module github.com/rancher/rancher-operator
 
 go 1.15
 
-replace k8s.io/client-go => k8s.io/client-go v0.20.0
+replace (
+	github.com/rancher/rancher/pkg/apis => github.com/cnrancher/pandaria/pkg/apis v0.0.0-20210222182625-a85f4d1f87fe
+	github.com/rancher/rancher/pkg/client => github.com/cnrancher/pandaria/pkg/client v0.0.0-20210222182625-a85f4d1f87fe
+	k8s.io/client-go => k8s.io/client-go v0.20.0
+)
 
 require (
 	github.com/rancher/eks-operator v1.0.6-rc1

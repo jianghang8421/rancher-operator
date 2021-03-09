@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+cd $(dirname $0)/..
+
+if [ "$OAUTH_TOKEN" != "" ]; then
+   git config --global url."https://${OAUTH_TOKEN}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
+fi
+
+GOPRIVATE="github.com/cnrancher" go mod tidy
